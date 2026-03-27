@@ -1,0 +1,202 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="SafeIoT" description="Center for Security and Privacy Assurance and Conformance in IoT Standards and Systems.">
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center justify-center text-center px-6 py-32 bg-gradient-to-b from-gray-50 to-white">
+    <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600 mb-4">Open-Source Ecosystem</p>
+    <h1 class="text-5xl font-extrabold text-gray-900 leading-tight max-w-4xl">
+      SafeIoT Center for Security and Privacy Assurance and Conformance in IoT Standards and Systems
+    </h1>
+    <p class="mt-6 text-lg text-gray-500 max-w-2xl">
+      SafeIoT is a non-profit center advancing security and privacy assurance for IoT standards and their real-world implementations through open-source tools and community-driven research.
+    </p>
+    <div class="mt-10">
+      <a
+        href="#hackathon"
+        class="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+      >
+        Join Our Hackathon 🥷
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">About SafeIoT</h2>
+    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+      Consumers increasingly rely on IoT products for home safety, health, and everyday convenience. Yet a critical gap persists: IoT standards and their implementations lack holistic, rigorous security verification — from formal mathematical methods to human-centered evaluation.
+    </p>
+    <p class="text-gray-600 text-lg leading-relaxed mb-12">
+      SafeIoT addresses this gap by establishing a community-driven open-source ecosystem with a CI/CD infrastructure that continuously verifies IoT standards and standardization implementations, with an initial focus on the <strong>Matter</strong> standard and <strong>FCC IoT Cybersecurity Labeling</strong>.
+    </p>
+
+    <!-- Tools -->
+    <h3 class="text-xl font-bold text-gray-900 mb-6">Our Open-Source Tools</h3>
+    <div class="grid sm:grid-cols-2 gap-6 mb-16">
+      {[
+        {
+          name: 'UMCCI Checker',
+          tag: 'Implementation Verification',
+          desc: 'Automatically identifies security vulnerabilities in IoT vendors\' Matter SDK integrations. Adopted by CSA, Apple, Google, SmartThings, Comcast, and Tuya.',
+        },
+        {
+          name: 'VerioT',
+          tag: 'Protocol Design Verification',
+          desc: 'Formally verifies the design of standard IoT protocols via automated model checking. Reported 30+ vulnerabilities adopted by 100+ IoT vendors.',
+        },
+        {
+          name: 'P-Verifier',
+          tag: 'Configuration Verification',
+          desc: 'Formally verifies IoT access control policies. Adopted by AWS as part of AWS IoT Device Defender; also adopted by the UK Ministry of Defence.',
+        },
+        {
+          name: 'Lalaine',
+          tag: 'Cybersecurity Label Verification',
+          desc: 'Verifies cybersecurity labels of mobile apps. Has detected thousands of non-compliant iOS apps from the Apple App Store. Adopted by the FTC.',
+        },
+      ].map(tool => (
+        <div class="border border-gray-200 rounded-xl p-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-indigo-500">{tool.tag}</span>
+          <h4 class="text-lg font-bold text-gray-900 mt-1 mb-2">{tool.name}</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">{tool.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Vision -->
+    <h3 class="text-xl font-bold text-gray-900 mb-4">Our Vision</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      We envision that every IoT standard and standardization update is accompanied by timely, rigorous, and human-centered security verification — covering specification documents, technical design, implementation, configuration, and cybersecurity labels.
+    </p>
+    <p class="text-gray-600 leading-relaxed">
+      SafeIoT's CI/CD infrastructure will be maintained by a distributed community of contributors from industry, academia, government, and the open-source community, ensuring continuous security assurance as standards evolve.
+    </p>
+  </section>
+
+  <!-- Hackathon -->
+  <section id="hackathon" class="bg-gray-50 px-6 py-24">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600 mb-2">Community Building</p>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">SafeIoT Hackathon</h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-10">
+        As part of the SafeIoT community engagement effort, we host a series of online competitions inviting engineers, researchers, and students to apply recent advances in IoT security verification to real-world challenges in the SafeIoT CI/CD pipeline.
+      </p>
+
+      <ul class="space-y-3 text-gray-600 mb-14 list-disc list-inside">
+        <li><strong>Who Should Join:</strong> Students, security researchers, software engineers, and IoT developers — no prior experience with formal methods required.</li>
+        <li><strong>What You'll Build:</strong> Open-source tools or prototypes addressing security and privacy challenges in IoT standards and systems.</li>
+        <li><strong>Impact:</strong> Your work will directly improve security assurance for IoT standards used by hundreds of millions of consumer devices worldwide.</li>
+      </ul>
+
+      <!-- Rules -->
+      <h3 class="text-xl font-bold text-gray-900 mb-4">Competition Rules</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        The hackathon is a <strong>project competition</strong>. Any <strong>open-source</strong> software related to security and privacy in IoT standards and systems is eligible. Example directions include:
+      </p>
+      <ul class="list-decimal list-inside space-y-2 text-gray-600 mb-8 ml-1">
+        <li>Automated IoT vulnerability detection</li>
+        <li>Formal modeling and verification of IoT systems or protocols</li>
+        <li>IoT privacy compliance analysis</li>
+        <li>IoT application configuration checking</li>
+      </ul>
+
+      <h4 class="font-semibold text-gray-900 mb-3">Evaluation Criteria</h4>
+      <div class="grid sm:grid-cols-2 gap-4 mb-14">
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-indigo-500 mb-1">Dimension 1</p>
+          <h5 class="font-semibold text-gray-900 mb-3">Innovation Value</h5>
+          <ul class="space-y-2 text-gray-500 text-sm leading-relaxed list-disc list-inside">
+            <li>Significance of contribution to real-world IoT ecosystem security</li>
+            <li>Novelty and creativity of the approach</li>
+            <li>Potential for adoption or integration into existing security pipelines</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-indigo-500 mb-1">Dimension 2</p>
+          <h5 class="font-semibold text-gray-900 mb-3">Engineering Quality</h5>
+          <ul class="space-y-2 text-gray-500 text-sm leading-relaxed list-disc list-inside">
+            <li>Code quality, clarity, and documentation</li>
+            <li>Robustness under dynamic execution and edge cases</li>
+            <li>Ease of use and reproducibility</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Prize -->
+      <h3 class="text-xl font-bold text-gray-900 mb-6">Prizes</h3>
+      <div class="grid sm:grid-cols-3 gap-4 mb-14">
+        {[
+          { place: '1st Place', prize: '$1,500', perks: 'Certificate of Excellence + invitation to present at SDIoTSec workshop' },
+          { place: '2nd Place', prize: '$800',   perks: 'Certificate of Achievement + SafeIoT swag kit' },
+          { place: '3rd Place', prize: '$400',   perks: 'Certificate of Achievement + SafeIoT swag kit' },
+        ].map(item => (
+          <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-xs font-semibold uppercase tracking-widest text-indigo-500 mb-1">{item.place}</p>
+            <p class="text-3xl font-extrabold text-gray-900 mb-2">{item.prize}</p>
+            <p class="text-gray-500 text-sm leading-relaxed">{item.perks}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Schedule -->
+      <h3 id="schedule" class="text-xl font-bold text-gray-900 mb-6">Schedule</h3>
+      <div class="space-y-5">
+        {[
+          { time: 'Day 1 · 9:00 AM',  event: 'Opening Ceremony & Team Formation' },
+          { time: 'Day 1 · 11:00 AM', event: 'Hacking Begins' },
+          { time: 'Day 2 · 12:00 PM', event: 'Midpoint Check-in with Mentors' },
+          { time: 'Day 2 · 6:00 PM',  event: 'Submissions Due' },
+          { time: 'Day 2 · 7:00 PM',  event: 'Demos & Judging' },
+        ].map(item => (
+          <div class="flex gap-6 items-start">
+            <span class="text-sm font-mono text-indigo-500 w-44 shrink-0 pt-0.5">{item.time}</span>
+            <span class="text-gray-700">{item.event}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-4xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">FAQ</h2>
+    <div class="space-y-8">
+      {[
+        {
+          q: 'Who can participate?',
+          a: 'Anyone with an interest in IoT security — students, professionals, and researchers. No prior experience with formal methods is required.',
+        },
+        {
+          q: 'Is it free to enter?',
+          a: 'Yes, participation is completely free.',
+        },
+        {
+          q: 'Do I need a team?',
+          a: 'You can apply solo or as a team of up to 4.',
+        },
+        {
+          q: 'What background do I need?',
+          a: 'Familiarity with software security, systems programming, or IoT is helpful. We will provide onboarding materials and mentor support throughout the event.',
+        },
+        {
+          q: 'What is the Matter standard?',
+          a: 'Matter is a major industry-unifying open-source standard for IoT design and implementation, backed by Amazon, Apple, Google, and hundreds of other vendors. SafeIoT\'s initial verification efforts focus on Matter.',
+        },
+      ].map(item => (
+        <div>
+          <p class="font-semibold text-gray-900">{item.q}</p>
+          <p class="mt-1 text-gray-500">{item.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 px-6 py-8 text-center text-sm text-gray-400">
+    © 2025 SafeIoT. All rights reserved.
+  </footer>
+
+</Layout>
