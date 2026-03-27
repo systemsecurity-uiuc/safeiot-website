@@ -23,6 +23,15 @@ npm run dev
 
 Open [http://localhost:4321](http://localhost:4321) in your browser. Changes to source files are reflected instantly without restarting.
 
+Currently, **it is recommended to edit the following files and save them to adjust the website content**:
+
+- safeiot-website/website/src/pages/index.astro
+- safeiot-website/website/src/pages/register.astro
+
+If the changes do not take effect, you can re-run `npm run dev`.
+
+
+
 ## Build for Production
 
 ```bash
