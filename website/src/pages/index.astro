@@ -81,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-4xl mx-auto">
       <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600 mb-2">Community Building</p>
       <h2 class="text-3xl font-bold text-gray-900 mb-2">SafeIoT Hackathon</h2>
-      <p class="text-sm text-red-600 mb-4">⚠️ Note: This page is under active development. All content is placeholder only and subject to change. Please refer to the official competition announcement for final details.</p>
+      <p class="text-sm text-red-600 mb-4">⚠️ Note: This page is under active development. Please refer to the official competition announcement for final details.</p>
       <p class="text-gray-600 text-lg leading-relaxed mb-8">
         As part of the SafeIoT community engagement effort, we host a series of online competitions inviting engineers, researchers, and students to apply recent advances in IoT security verification to real-world challenges in the SafeIoT CI/CD pipeline.
       </p>
@@ -169,19 +169,18 @@ import Layout from '../layouts/Layout.astro';
         ))}
       </div>
 
-      <!-- Schedule -->
-      <h3 id="schedule" class="text-xl font-bold text-gray-900 mb-6">Schedule</h3>
-      <div class="space-y-5">
+      <!-- Organizers -->
+      <h3 class="text-xl font-bold text-gray-900 mb-6">Organizers</h3>
+      <div class="grid sm:grid-cols-2 gap-4">
         {[
-          { time: 'Day 1 · 9:00 AM',  event: 'Opening Ceremony & Team Formation' },
-          { time: 'Day 1 · 11:00 AM', event: 'Hacking Begins' },
-          { time: 'Day 2 · 12:00 PM', event: 'Midpoint Check-in with Mentors' },
-          { time: 'Day 2 · 6:00 PM',  event: 'Submissions Due' },
-          { time: 'Day 2 · 7:00 PM',  event: 'Demos & Judging' },
-        ].map(item => (
-          <div class="flex gap-6 items-start">
-            <span class="text-sm font-mono text-indigo-500 w-44 shrink-0 pt-0.5">{item.time}</span>
-            <span class="text-gray-700">{item.event}</span>
+          { name: 'Luyi Xing', role: 'Associate Professor of Computer Science, UIUC' },
+          { name: 'Jean Camp', role: 'Distinguished Professor, UNC Charlotte' },
+          { name: 'Xiaojing Liao', role: 'Associate Professor of Computer Science, UIUC' },
+          { name: 'Brian LaMacchia', role: 'Industry Mentor' },
+        ].map(organizer => (
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <p class="font-semibold text-gray-900">{organizer.name}</p>
+            <p class="text-gray-500 text-sm leading-relaxed mt-1">{organizer.role}</p>
           </div>
         ))}
       </div>
