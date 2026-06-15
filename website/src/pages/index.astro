@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pipelineImage from '../../../figures/pipeline.png';
 ---
 
 <Layout title="SafeIoT" description="Center for Security, Privacy, and Conformance in IoT Standards and Systems.">
@@ -32,9 +33,18 @@ import Layout from '../layouts/Layout.astro';
     <p class="text-gray-600 text-lg leading-relaxed mb-6">
       SafeIoT addresses this gap by establishing a community-driven open-source ecosystem with a CI/CD infrastructure that continuously verifies IoT standards and standardization implementations, with an initial focus on the <strong>Matter</strong> standard and <strong>FCC IoT Cybersecurity Labeling</strong>.
     </p>
-    <p class="text-gray-600 text-lg leading-relaxed mb-12">
+    <p class="text-gray-600 text-lg leading-relaxed mb-6">
       SafeIoT Center is supported by <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2604255" class="text-indigo-600 hover:underline">NSF</a>, UIUC, UNC Charlotte, and Indiana University.
     </p>
+    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+      SafeIoT Center maintains an open-source pipeline that incorporates and operationalizes state-of-the-art tools and systems to continuously verify the security and privacy of IoT standards, such as Matter, and consumer IoT products and systems, such as Google Home, Apple Home, and SmartThings.
+    </p>
+    <figure class="bg-white border border-gray-200 rounded-xl p-4 mb-12">
+      <img src={pipelineImage.src} alt="SafeIoT CI/CD pipeline overview" class="w-full h-auto" />
+      <figcaption class="mt-3 text-sm text-gray-500 text-center">
+        SafeIoT CI/CD pipeline for continuously verifying IoT standards, products, and implementations.
+      </figcaption>
+    </figure>
 
     <!-- Tools -->
     <h3 class="text-xl font-bold text-gray-900 mb-6">Our Open-Source Tools</h3>
@@ -86,7 +96,7 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="text-3xl font-bold text-gray-900 mb-2">SafeIoT Hackathon</h2>
       <p class="text-sm text-red-600 mb-4">⚠️ Note: This page is under active development. Please refer to the official competition announcement for final details.</p>
       <p class="text-gray-600 text-lg leading-relaxed mb-8">
-        As part of the SafeIoT community engagement effort, we host a series of online competitions inviting engineers, researchers, and students to apply recent advances in IoT security verification to real-world challenges in the SafeIoT CI/CD pipeline.
+        As part of the SafeIoT community engagement effort, we host a series of online competitions inviting engineers, researchers, and students to contribute tools and approaches that can be added to the SafeIoT CI/CD pipeline and applied to real-world IoT security and privacy challenges.
       </p>
 
       <div class="bg-white border border-indigo-100 rounded-xl p-6 mb-10">
@@ -99,7 +109,7 @@ import Layout from '../layouts/Layout.astro';
 
       <ul class="space-y-3 text-gray-600 mb-14 list-disc list-inside">
         <li><strong>Who Should Join:</strong> Students, security researchers, software engineers, and IoT developers.</li>
-        <li><strong>What You'll Build:</strong> Open-source tools or prototypes addressing security and privacy challenges in IoT standards and systems.</li>
+        <li><strong>What You'll Build:</strong> Open-source tools or prototypes that can be integrated into the SafeIoT pipeline to verify specific security or privacy issues in consumer IoT, IoT standards, and implementations of those standards.</li>
         <li><strong>Impact:</strong> Your work will directly improve security assurance for IoT standards used by hundreds of millions of consumer devices worldwide.</li>
       </ul>
 
@@ -125,7 +135,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Rules -->
       <h3 class="text-xl font-bold text-gray-900 mb-4">Competition Rules</h3>
       <p class="text-gray-600 leading-relaxed mb-4">
-        The hackathon is a <strong>project competition</strong>. Any <strong>open-source</strong> software related to security and privacy in IoT standards and systems is eligible. Submissions should align with one of the two hackathon tracks and may include:
+        The hackathon is a <strong>project competition</strong>. Any <strong>open-source</strong> software related to security and privacy in IoT standards and systems is eligible. Submissions should align with one of the two hackathon tracks, demonstrate how the tool or approach could fit into the SafeIoT pipeline, and may include:
       </p>
       <ul class="list-decimal list-inside space-y-2 text-gray-600 mb-8 ml-1">
         <li>Automated IoT vulnerability detection</li>
