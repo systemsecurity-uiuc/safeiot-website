@@ -4,8 +4,10 @@ import safeIoTLogo from '../../../figures/safeIoT.png';
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Hackathon', href: '#hackathon' },
-  { label: 'FAQ', href: '#faq' },
 ];
+
+const registerUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSecrUHT6J71aZd2Sv2KGXvOtpzqZfD-4hyHG13gaIU57yC4rw/viewform';
+const submitUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdGrAUIi8LS3PakatXo68CsuKH3Gat1trQAxSOEEtquXgH0Fg/viewform';
 ---
 
 <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -17,7 +19,7 @@ const navLinks = [
     </a>
 
     <!-- Right: Nav links -->
-    <nav class="flex items-center gap-8">
+    <nav class="flex items-center gap-6">
       {navLinks.map(link => (
         <a
           href={link.href}
@@ -26,12 +28,24 @@ const navLinks = [
           {link.label}
         </a>
       ))}
-      <a
-        href="/register"
-        class="text-sm font-semibold px-4 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-700 transition-colors"
-      >
-        Register
-      </a>
+      <div class="flex items-center gap-3">
+        <a
+          href={registerUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 hover:bg-gray-50 transition-colors"
+        >
+          Register
+        </a>
+        <a
+          href={submitUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 hover:bg-gray-50 transition-colors"
+        >
+          Submit
+        </a>
+      </div>
     </nav>
 
   </div>
