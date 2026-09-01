@@ -1,6 +1,6 @@
 # SafeIoT Hackathon — Project Submission Form
 
-Google Form #2 of 2. Opens closer to the deadline, closes 11:59pm, November 10th, 2026 (AoE).
+Google Form #2 of 2. Opens closer to the deadline, closes 11:59pm, November 30th, 2026 (AoE).
 
 **Single page.** The four headings below are visual groupings only — do not use "Add section", which forces a page break in Google Forms.
 
@@ -11,7 +11,7 @@ Google Form #2 of 2. Opens closer to the deadline, closes 11:59pm, November 10th
 **Title:** SafeIoT Hackathon — Project Submission
 
 **Description:**
-> Submit your project for the SafeIoT Hackathon. Submissions close at **11:59pm on November 10th, 2026, Anywhere on Earth (AoE)**.
+> Submit your project for the SafeIoT Hackathon. Submissions close at **11:59pm on November 30th, 2026, Anywhere on Earth (AoE)**.
 > A complete submission has three parts: a **scientific paper (PDF)**, a **pitch video (max 5 minutes)**, and a **public code repository**.
 > **One submission per team.** The primary contact submits on behalf of the whole team — please don't submit the same project more than once.
 > You do not need to have registered earlier to submit.
@@ -155,4 +155,4 @@ Plain text only; paste the lines below without the leading `>`.
 
 > Submission received. You'll get a copy of your response by email — keep it as your receipt.
 > Need to change something? Use the edit link in that email rather than filling in the form again — one submission per team.
-> You can edit your submission until 11:59pm, November 10th, 2026 (AoE). Results will be announced by email.
+> You can edit your submission until 11:59pm, November 30th, 2026 (AoE). Results will be announced by email.

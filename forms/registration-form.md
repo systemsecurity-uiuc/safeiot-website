@@ -12,7 +12,7 @@ Google Form #1 of 2. Opens now, stays open until the submission deadline.
 > Register for the SafeIoT Hackathon. Registration is free and open to anyone — students, researchers, and industry engineers.
 > Registering keeps you on the list for info webinars, onboarding materials, and deadline reminders.
 > If you're participating as a team, **each member should register individually** — that's how we make sure everyone gets the webinar links and reminders.
-> Submitting your project is a **separate form**, opening closer to the deadline (11:59pm, November 10th, 2026, AoE).
+> Submitting your project is a **separate form**, opening closer to the deadline (11:59pm, November 30th, 2026, AoE).
 > Questions: sdiotsec@gmail.com
 
 ---
@@ -90,4 +90,4 @@ Google Form #1 of 2. Opens now, stays open until the submission deadline.
 Plain text only; paste the lines below without the leading `>`.
 
 > Thanks for registering for the SafeIoT Hackathon! We'll email you the webinar links and onboarding materials.
-> Remember: this is registration only. Project submissions go through a separate form, due 11:59pm, November 10th, 2026 (AoE).
+> Remember: this is registration only. Project submissions go through a separate form, due 11:59pm, November 30th, 2026 (AoE).

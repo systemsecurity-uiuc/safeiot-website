@@ -16,7 +16,7 @@ Potential categories include but are not limited to the following:
 
 ## Submission Requirements
 
-**Deadline: 11:59pm, November 10th, 2026 (Anywhere on Earth).** For how to submit, eligibility, prizes, and the rest of the hackathon details, see https://safe-iot.com/#hackathon.
+**Deadline: 11:59pm, November 30th, 2026 (Anywhere on Earth).** For how to submit, eligibility, prizes, and the rest of the hackathon details, see https://safe-iot.com/#hackathon.
 
 ### Scientific Paper (Up to 5 Pages)
 
