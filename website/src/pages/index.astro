@@ -239,7 +239,7 @@ const ctaOutline = 'border border-indigo-600 bg-white text-indigo-600 hover:bg-i
           presenting your work as a research contribution.
         </li>
         <li>
-          <strong>Code repository</strong> — publicly accessible by the deadline, with setup, usage, and reproducibility instructions.
+          <strong>Code repository</strong> — publicly accessible by the deadline, with setup, usage, and reproducibility instructions. It should carry a permissive open-source license (MIT, Apache 2.0, or BSD).
         </li>
         <li>
           <strong>Pitch video, max 5 minutes</strong> — using the
@@ -250,6 +250,10 @@ const ctaOutline = 'border border-indigo-600 bg-white text-indigo-600 hover:bg-i
       <h4 class="font-semibold text-gray-900 mb-3">Evaluation Criteria</h4>
       <div class="grid sm:grid-cols-2 gap-4 mb-14">
         {[
+          {
+            name: 'Problem Definition',
+            desc: 'A clearly defined threat — security, privacy, or conformance — and what the best existing defenses do about it today, including where they fall short.',
+          },
           {
             name: 'Technical Innovation',
             desc: 'How novel the approach is, and what it can verify that existing tools cannot.',
