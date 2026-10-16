@@ -1,50 +1,38 @@
 ---
 import safeIoTLogo from '../../../figures/safeIoT.png';
 
+// `deep` links point inside the hackathon section; they are hidden on narrow screens so
+// the bar does not overflow.
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Hackathon', href: '#hackathon' },
+  { label: 'Tracks', href: '#tracks', deep: true },
+  { label: 'Rules', href: '#rules', deep: true },
+  { label: 'Prizes', href: '#prizes', deep: true },
+  { label: 'Judges', href: '#judges', deep: true },
 ];
-
-import { registerUrl, submitUrl } from '../links';
 ---
 
 <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
 
     <!-- Left: Logo -->
-    <a href="/" class="flex items-center gap-3">
+    <a href="/" class="flex items-center gap-3 shrink-0">
       <img src={safeIoTLogo.src} alt="SafeIoT Logo" class="h-10 w-auto" />
     </a>
 
     <!-- Right: Nav links -->
-    <nav class="flex items-center gap-6">
+    <nav class="flex items-center gap-5 sm:gap-6">
       {navLinks.map(link => (
         <a
           href={link.href}
-          class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          class={`text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors ${
+            link.deep ? 'hidden md:inline' : ''
+          }`}
         >
           {link.label}
         </a>
       ))}
-      <div class="flex items-center gap-3">
-        <a
-          href={registerUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 hover:bg-gray-50 transition-colors"
-        >
-          Register
-        </a>
-        <a
-          href={submitUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 hover:bg-gray-50 transition-colors"
-        >
-          Submit
-        </a>
-      </div>
     </nav>
 
   </div>
