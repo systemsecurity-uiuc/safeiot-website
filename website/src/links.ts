@@ -3,5 +3,6 @@
 // two stay in step.
 export const registerUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSecrUHT6J71aZd2Sv2KGXvOtpzqZfD-4hyHG13gaIU57yC4rw/viewform';
+export const discordUrl = 'https://discord.gg/yKvZVc6zHH';
 export const submitUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSdGrAUIi8LS3PakatXo68CsuKH3Gat1trQAxSOEEtquXgH0Fg/viewform';
