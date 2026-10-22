@@ -316,7 +316,7 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
       <h3 id="judges" class="text-xl font-bold text-gray-900 mb-4 scroll-mt-24">Hackathon Judges</h3>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {[
-          { name: 'Brian LaMacchia', title: 'President', affiliation: 'Farcaster Consulting Group' },
+          { name: 'Brian LaMacchia', href: 'https://www.linkedin.com/in/brianlamacchia' },
           { name: 'Bill Newhouse', title: 'Cybersecurity Engineer & Project Lead', affiliation: 'NIST' },
           { name: 'Jeffrey Marron', title: 'Security Engineer', affiliation: 'U.S. Department of Commerce | NIST' },
           { name: 'Jeff Shapiro', title: 'Director of License Scanning', affiliation: 'The Linux Foundation' },
@@ -328,9 +328,13 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
           { name: 'Yue Xiao', title: 'Assistant Professor', affiliation: 'William & Mary' },
         ].map(judge => (
           <div class="bg-white border border-gray-200 rounded-xl p-6">
-            <p class="font-bold text-gray-900">{judge.name}</p>
-            <p class="text-sm font-semibold text-gray-700 mt-2">{judge.title}</p>
-            <p class="text-sm text-gray-500 mt-1">{judge.affiliation}</p>
+            <p class="font-bold text-gray-900">
+              {judge.href
+                ? <a href={judge.href} target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 hover:underline transition-colors">{judge.name}</a>
+                : judge.name}
+            </p>
+            {judge.title && <p class="text-sm font-semibold text-gray-700 mt-2">{judge.title}</p>}
+            {judge.affiliation && <p class="text-sm text-gray-500 mt-1">{judge.affiliation}</p>}
           </div>
         ))}
       </div>
