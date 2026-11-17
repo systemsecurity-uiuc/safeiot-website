@@ -22,12 +22,20 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
     <p class="mt-6 text-lg text-gray-500 max-w-3xl">
       SafeIoT is a non-profit funded by NSF to advance security and privacy assurance for IoT standards and their real-world implementations, through open-source tools and community-driven research.
     </p>
-    <div class="mt-10">
+    <div class="mt-10 flex flex-col sm:flex-row gap-3">
       <a
         href="#hackathon"
-        class="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
       >
         Join Our Hackathon 🥷
+      </a>
+      <a
+        href={discordUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+      >
+        Join the Discord 👾
       </a>
     </div>
   </section>
@@ -116,9 +124,11 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
 
       <div class="bg-white border border-indigo-100 rounded-xl p-6 mb-4">
         <p class="text-sm font-semibold uppercase tracking-widest text-indigo-500 mb-1">Submission Deadline</p>
-        <p class="text-xl font-bold text-gray-900">November 30th, 2026 — 11:59pm (AoE)</p>
+        <p class="text-xl font-bold text-gray-900">
+          <s class="line-through text-base font-normal text-gray-400 mr-2">November 30th, 2026</s>December 10th, 2026 — 11:59pm (AoE)
+        </p>
         <p class="text-gray-500 text-sm leading-relaxed mt-3">
-          Your submission is on time as long as it is still November 30th somewhere in the world (UTC−12).
+          Your submission is on time as long as it is still December 10th somewhere in the world (UTC−12).
         </p>
 
         <div class="flex flex-col sm:flex-row gap-3 mt-5">
@@ -208,7 +218,7 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
         <li>
           <strong>Scientific paper, up to 5 pages</strong> — a PDF in double-column
           <a href="https://www.acm.org/publications/proceedings-template" class="text-indigo-600 hover:underline">ACM format</a>
-          presenting your work as a research contribution.
+          presenting your work as a research contribution, plus up to 2 additional pages for references and appendices.
         </li>
         <li>
           <strong>Code repository</strong> — publicly accessible by the deadline, with setup, usage, and reproducibility instructions. It should carry a permissive open-source license (MIT, Apache 2.0, or BSD).
@@ -253,7 +263,7 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
       <!-- Prize -->
       <h3 id="prizes" class="text-xl font-bold text-gray-900 mb-6 scroll-mt-24">Prizes</h3>
       <p class="text-gray-600 text-sm leading-relaxed mb-6">
-        Prizes are awarded across both hackathon tracks combined, not separately per track: first, second, and third place will be selected from all participants. Issuing of the monetary prizes is subject to final security and compliance checks, while the certificates for winners will be guaranteed. To qualify for the award, award winners should agree to deploy their tool/artifacts as open-source components to the SafeIoT CI/CD pipeline, under a permissive open-source license (e.g., MIT, Apache 2.0, or BSD).
+        Winners will be notified by <strong>January 30th, 2027</strong> (tentative). Prizes are awarded across both hackathon tracks combined, not separately per track: first, second, and third place will be selected from all participants. Issuing of the monetary prizes is subject to final security and compliance checks, while the certificates for winners will be guaranteed. To qualify for the award, award winners should agree to deploy their tool/artifacts as open-source components to the SafeIoT CI/CD pipeline, under a permissive open-source license (e.g., MIT, Apache 2.0, or BSD).
       </p>
       <div class="grid sm:grid-cols-3 gap-4 mb-14">
         {[
