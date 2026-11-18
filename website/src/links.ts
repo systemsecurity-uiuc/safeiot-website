@@ -1,8 +1,6 @@
-// Shared destinations for the Google Forms behind the Register and Submit buttons.
-// Imported by the header and by the in-page calls to action on the homepage, so the
-// two stay in step.
+// Shared destinations used by the calls to action on the homepage.
+// The Submit button has no URL for now: submissions are moving to HotCRP, so it
+// sits disabled until that portal is live.
 export const registerUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSecrUHT6J71aZd2Sv2KGXvOtpzqZfD-4hyHG13gaIU57yC4rw/viewform';
 export const discordUrl = 'https://discord.gg/yKvZVc6zHH';
-export const submitUrl =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdGrAUIi8LS3PakatXo68CsuKH3Gat1trQAxSOEEtquXgH0Fg/viewform';

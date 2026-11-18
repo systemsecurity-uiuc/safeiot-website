@@ -7,7 +7,7 @@ import xiaojingImage from '../../../figures/Xiaojing.jpg';
 import brianImage from '../../../figures/Brian.jpg';
 import yueImage from '../../../figures/Yue.jpg';
 import longImage from '../../../figures/Long.PNG.jpg';
-import { discordUrl, registerUrl, submitUrl } from '../links';
+import { discordUrl, registerUrl } from '../links';
 
 ---
 
@@ -122,7 +122,7 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
         As part of the SafeIoT community engagement effort, we host a series of online competitions inviting engineers, researchers, and students to contribute tools and approaches that can be added to the SafeIoT CI/CD pipeline and applied to real-world IoT security and privacy challenges.
       </p>
 
-      <div class="bg-white border border-indigo-100 rounded-xl p-6 mb-4">
+      <div class="bg-white border border-indigo-100 rounded-xl p-6 mb-10">
         <p class="text-sm font-semibold uppercase tracking-widest text-indigo-500 mb-1">Submission Deadline</p>
         <p class="text-xl font-bold text-gray-900">
           <s class="line-through text-base font-normal text-gray-400 mr-2">November 30th, 2026</s>December 10th, 2026 — 11:59pm (AoE)
@@ -132,43 +132,26 @@ import { discordUrl, registerUrl, submitUrl } from '../links';
         </p>
 
         <div class="flex flex-col sm:flex-row gap-3 mt-5">
-          <a
-            href={submitUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
+          <button
+            type="button"
+            disabled
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gray-100 text-gray-400 font-semibold cursor-not-allowed"
           >
             Submit Project
-          </a>
+          </button>
           <a
             href={discordUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-indigo-600 bg-white text-indigo-600 font-semibold hover:bg-indigo-50 transition-colors"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors"
           >
             Join the Discord
           </a>
         </div>
 
         <p class="text-gray-500 text-sm leading-relaxed mt-4">
-          The Discord is where the webinar time, announcements, and questions land. Prefer email? <a href={registerUrl} target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-medium hover:underline">Register</a> and we'll send you the same updates and deadline reminders.
+          Submissions will be handled through HotCRP — the portal is coming soon, and we'll announce it on the Discord.<br />Prefer email? <a href={registerUrl} target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-medium hover:underline">Register</a> and we'll send you the same updates and deadline reminders.
         </p>
-      </div>
-
-      <div class="bg-white border border-indigo-100 rounded-xl p-6 mb-10">
-        <p class="text-sm font-semibold uppercase tracking-widest text-indigo-500 mb-1">Info Webinar</p>
-        <p class="text-base font-bold text-gray-900">The webinar time will be announced once confirmed.</p>
-        <p class="text-gray-500 text-sm leading-relaxed mt-2">
-          Organizers will host a live session walking through the hackathon — tracks, submission requirements, and evaluation criteria — and answering questions from participants.
-        </p>
-        <a
-          href="https://illinois.zoom.us/j/87867189853?pwd=YDlAa3UNZ8SlgFptrI1ly2oaEhY4d9.1"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block mt-4 px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-500 transition-colors"
-        >
-          Join on Zoom
-        </a>
       </div>
 
       <ul class="space-y-3 text-gray-600 mb-14 list-disc list-inside">
